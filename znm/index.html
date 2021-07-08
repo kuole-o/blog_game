@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang='en'>
 	<head>
-		<title>转你妹</title>
+		<title>解压六边形&nbsp;|&nbsp;guole's Blog</title>
 		<meta charset="UTF-8">
 		<meta name="viewport"
 			content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-		<link rel="icon" href="icon.png">
+		<link rel="icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<link rel="stylesheet" href="style/fa/css/font-awesome.min.css">
 		<script type='text/javascript' src="js/jquery-2.0.3.min.js"></script>
@@ -91,10 +91,10 @@ html {
 				<br>
 			</p>
 		</div>
-		<!-- <div id="openSideBar" class = 'helpText'><i class="fa fa-info-circle fa-lg"></i> <i class="fa fa-arrow-left"><b>  帮助</b></i></div> -->
-		<!-- <div id = 'pauseBtn'><div id = 'pauseBtnInner'><i class="fa fa-pause fa-2x"></i></div></div>
+		<div id="openSideBar" class = 'helpText'><i class="fa fa-info-circle fa-lg"></i><b>  帮助</b></div>
+		 <div id = 'pauseBtn'><div id = 'pauseBtnInner'><i class="fa fa-pause fa-2x"></i></div></div>
 		<div id = 'restartBtn'><div id = 'restartBtnInner'><i class="fa fa-refresh fa-2x"></i></div></div>
-		 -->
+		
 		<div id="overlayMask" style="display:none;"></div>
 
 		<script language=javascript>
@@ -104,7 +104,7 @@ var guanzhuurl ="https://guole.fun/game/";
 		window.shareData = {
 		        "imgUrl": "https://guole.fun/game/",
 		        "timeLineLink":thegameurl,
-		        "tTitle": "转你妹",
+		        "tTitle": "解压六边形",
 		        "tContent": "轻松休闲的消除类游戏，小伙伴们快来体验一下！"
 		};
 
@@ -166,7 +166,7 @@ var guanzhuurl ="https://guole.fun/game/";
 			function dp_submitScore(score){
 						myData.score = parseInt(score);
 						myData.scoreName ="获得"+score+"分";
-						document.title = window.shareData.tTitle = "我在【转你妹】完成了" +score+ "分,转晕了都，有本事来挑战一下，嘻嘻！";
+						document.title = window.shareData.tTitle = "我在【解压六边形】完成了" +score+ "分,转晕了都，有本事来挑战一下，嘻嘻！";
 			}
 			function onShareComplete(res) {
                 if (localStorage.myuid && myData.score != undefined) {

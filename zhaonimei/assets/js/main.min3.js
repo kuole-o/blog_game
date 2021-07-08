@@ -26,7 +26,7 @@ var _lang = {
         desc: "找出所有色块中颜色不同的一块。分享朋友圈，找到身边的色魔"
     },
     zh: {
-        title: "微信找你妹",
+        title: "找你妹",
         help_txt: "在众多<span style='font-size:240%'>袜</span>子中找到唯一的<span style='font-size:240%'>妹</span>子",
         score: "过关：",
         btn_pause: "暂停",
@@ -37,7 +37,7 @@ var _lang = {
         btn_resume: "继续游戏",
         loading: "加载中...",
         lv_txt: ["色郎", "色狼", "色鬼", "色魔", "超级色魔", "变态色魔", "孤独求色",],
-        share_txt1: "【微信找你妹】我在",
+        share_txt1: "【找你妹】我在",
         share_txt2: "只袜子中找到",
         share_txt3: "个妹子，我是【",
         share_txt4: "】，不服来战！",
@@ -88,7 +88,7 @@ function() {
     b = $("#tpl").html(),
     c = _.template(b, a);
     $("body").html(c),
-    $("title").html(a.title)
+    $("title").html()
 } (),
 function() {
     var a = $("#box"),

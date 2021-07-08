@@ -74,8 +74,8 @@ button:focus {
 
 #openSideBar {
     position: absolute;
-    top: 2px;
-    left: 4px;
+    top: 1em;
+    left: 1em;
     z-index: 3002;
     color:#232323;
     cursor:pointer;
@@ -155,20 +155,22 @@ button:focus {
 and (max-device-width : 480px) {
     #helpScreen {
         position:fixed;
-        top:2px;
+        top:20px;
         padding-top:20px;
         margin:0;
         width:100%;
         height:100%;
         font-size:13px;
         text-align:center;
-        background-color:rgba(255,255,255,0.9);
     }
 
     .instructions_body {
         /*margin-top:20px;*/
         margin-left:3px;
         width:calc(100% - 12px) ! important;
+    }
+    #openSideBar i.fa.fa-info-circle.fa-lg {
+        top: 2px;
     }
 }
 

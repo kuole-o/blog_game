@@ -10,6 +10,10 @@ html, body{
   font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", Helvetica, Tahoma, Arial, sans-serif;
 }
 
+.notice p {
+  font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", Helvetica, Tahoma, Arial, sans-serif;
+}
+
 .engine {
   margin: auto; 
   width: 21rem;
