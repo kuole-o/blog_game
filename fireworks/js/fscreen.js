@@ -1,5 +1,8 @@
-// A manual UMD build of Fscreen: https://github.com/rafrex/fscreen
-
+/*
+此源码是基于 XgpNwb 的二次修改
+Github：https://github.com/NianBroken/Firework_Simulator
+Gitee：https://gitee.com/nianbroken/Firework_Simulator
+*/
 (function(global) {
   'use strict';
   
@@ -19,6 +22,7 @@
   var ms = ['msFullscreenEnabled', 'msFullscreenElement', 'msRequestFullscreen', 'msExitFullscreen', 'MSFullscreenChange', 'MSFullscreenError'];
 
   // so it doesn't throw if no window or document
+  // The language of this project was translated into Chinese by Nianbroken
   var doc = typeof window !== 'undefined' && typeof window.document !== 'undefined' ? window.document : {};
 
   var vendor = 'fullscreenEnabled' in doc && Object.keys(key) || webkit[0] in doc && webkit || moz[0] in doc && moz || ms[0] in doc && ms || [];

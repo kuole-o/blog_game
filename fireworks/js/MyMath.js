@@ -1,15 +1,8 @@
-// OLD VERSION DO NOT USE
-// Older pens still rely on this.
-
-/**
- * MyMath.js
- * -----------
- * Handy math/trig reference.
- * 
- * Author: Caleb Miller
- *         caleb@caleb-miller.com
+/*
+此源码是基于 XgpNwb 的二次修改
+Github：https://github.com/NianBroken/Firework_Simulator
+Gitee：https://gitee.com/nianbroken/Firework_Simulator
 */
- 
 const MyMath = (function MyMathFactory(Math) {
 
 	const MyMath = {};
@@ -28,6 +21,7 @@ const MyMath = (function MyMathFactory(Math) {
 	
 	// Pythagorean Theorem point distance calculation
 	// Same as above, but takes coordinates instead of dimensions.
+	// The language of this project was translated into Chinese by Nianbroken
 	MyMath.pointDist = (x1, y1, x2, y2) => {
 		const distX = x2 - x1;
 		const distY = y2 - y1;
