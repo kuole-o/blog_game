@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>抓住那只猫&nbsp;|&nbsp;Guo Le's Blog</title>
+  <style>
+      * {
+          padding: 0;
+          margin: 0
+      }
+      #catch-the-cat {
+          width: 100%;
+          margin-top: 32px;
+          text-align: center;
+      }
+      .home {
+        text-align:center;
+        width: 100%;
+      }
+  ｝
+</style>
+</head>
+<body>
+  <script src="./phaser.min.js"></script>
+  <script src="./catch-the-cat.js"></script>
+  <div id="catch-the-cat"></div>
+  /* <div class="home">更多</div> */
+  <script>
+      window.game = new CatchTheCatGame({
+      w: 11,
+      h: 11,
+      r: 20,
+      backgroundColor: 0xffffff,
+      parent: 'catch-the-cat',
+      statusBarAlign: 'center',
+      });
+  </script>
+  <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+  </body>
+</html>
