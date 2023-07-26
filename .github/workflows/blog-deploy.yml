@@ -1,0 +1,35 @@
+name: game.guole.fun build deploy
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+        
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Delete irrelevant directories
+      run: |
+        rm -rf .github && rm -rf .git
+
+    - name: Install tencent cloud coscmd
+      run: |
+        sudo pip install coscmd
+  
+    - name: Configuration tencent cloud coscmd
+      env:
+        SECRET_ID: ${{ secrets.TENCENT_CLOUD_SECRET_ID }}
+        SECRET_KEY: ${{ secrets.TENCENT_CLOUD_SECRET_KEY }}
+        BUCKET: ${{ secrets.COS_BUCKET }}
+        REGION: ${{ secrets.COS_REGION }}
+      run: |
+        coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
+
+    - name: upload tencent cloud COS
+      run: |
+        coscmd upload -rfs --delete / /
