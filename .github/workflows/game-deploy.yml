@@ -32,4 +32,4 @@ jobs:
 
     - name: upload tencent cloud COS
       run: |
-        coscmd upload -rfs --delete / /
+        coscmd upload -rfs --delete ./ /
