@@ -123,6 +123,22 @@ body {
   right: 0;
   transition: opacity 0.3s;
 }
+.menu__inner-wrap button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  top: 4px;
+  cursor:pointer;
+  background: #999;
+  transition: all 0.2s;
+  border-radius: 4px;
+  border:2px solid;
+  padding: 4px 8px;
+}
+.menu__inner-wrap button:hover {
+  background: #b4b4b4;
+}
 .menu__header {
   margin-top: auto;
   margin-bottom: 8px;
