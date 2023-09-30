@@ -31,10 +31,12 @@ const MAX_HEIGHT = 4320;
 const GRAVITY = 0.9; // Acceleration in px/s
 let simSpeed = 1;
 
+
+//根据条件返回一个默认的缩放因子
 function getDefaultScaleFactor() {
-	if (IS_MOBILE) return 0.5;
-	if (IS_HEADER) return 0.75;
-	return 0.5;
+	if (IS_MOBILE) return 0.9; //移动端默认值
+	if (IS_HEADER) return 1.5; //PC端默认值
+	return 1.0;
 }
 
 // Width/height values that take scale into account.

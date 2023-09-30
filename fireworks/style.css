@@ -132,7 +132,7 @@ body {
 }
 .menu__subheader {
   margin-bottom: auto;
-  padding-bottom: 12px;
+  /* padding-bottom: 12px; */
   font-size: 0.86em;
   opacity: 0.8;
 }
@@ -224,7 +224,7 @@ body {
 .credits {
   margin-top: auto;
   margin-bottom: 10px;
-  padding-top: 6px;
+  padding: 16px 0px;
   font-size: 0.8em;
   opacity: 0.75;
   text-align: center;

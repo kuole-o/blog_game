@@ -185,78 +185,78 @@
     <script type="text/javascript">
       const gameList = [
         {
-          "name": "放烟花",
-          "url": "https://game.guole.fun/fireworks/",
+          "name": "烟花奇遇",
+          "url": "/fireworks/",
           "icon": "fangyanhua.png",
           "rating": 4
         }, {
           "name": "2048",
-          "url": "https://game.guole.fun/2048/",
+          "url": "/2048/",
           "icon": "2048.png",
           "rating": 5
         }, {
           "name": "扫雷",
-          "url": "https://game.guole.fun/saolei/",
+          "url": "/saolei/",
           "icon": "saolei.jpg",
           "rating": 3
         }, {
           "name": "羊了个羊",
-          "url": "https://game.guole.fun/yanglegeyang/",
+          "url": "/yanglegeyang/",
           "icon": "yanglegeyang.png",
           "rating": 3
         }, {
           "name": "抓住那只猫",
-          "url": "https://game.guole.fun/cat/",
+          "url": "/cat/",
           "icon": "cat.png",
           "rating": 3
         }, {
           "name": "免费云空调",
-          "url": "https://game.guole.fun/AirConditioner/",
+          "url": "/AirConditioner/",
           "icon": "AirConditioner.png",
           "rating": 2
         }, {
           "name": "合成大西瓜",
-          "url": "https://game.guole.fun/daxigua/",
+          "url": "/daxigua/",
           "icon": "daxigua.png",
           "rating": 4
         }, {
           "name": "读心术",
-          "url": "https://game.guole.fun/duxinshu/",
+          "url": "/duxinshu/",
           "icon": "duxinshu.jpg",
           "rating": 2
         }, {
           "name": "解压六边形",
-          "url": "https://game.guole.fun/znm/",
+          "url": "/znm/",
           "icon": "znm.jpg",
           "rating": 3
         }, {
           "name": "名字大作战",
-          "url": "https://game.guole.fun/name_pk/",
+          "url": "/name_pk/",
           "icon": "name_pk.jpg",
           "rating": 2
         }, {
           "name": "召唤神龙",
-          "url": "https://game.guole.fun/Dragon/",
+          "url": "/Dragon/",
           "icon": "Dragon.png",
           "rating": 1
         }, {
           "name": "吃包子大赛",
-          "url": "https://game.guole.fun/baozi/",
+          "url": "/baozi/",
           "icon": "baozi.jpg",
           "rating": 1
         }, {
           "name": "颜色找不同",
-          "url": "https://game.guole.fun/se2/",
+          "url": "/se2/",
           "icon": "se2.jpg",
           "rating": 2
         }, {
           "name": "兔子快跑",
-          "url": "https://game.guole.fun/tuzi/",
+          "url": "/tuzi/",
           "icon": "tuzi.png",
           "rating": 1
         }, {
           "name": "文字找不同",
-          "url": "https://game.guole.fun/zhaonimei/",
+          "url": "/zhaonimei/",
           "icon": "zhaonimei.jpg",
           "rating": 2
         }]
@@ -264,12 +264,15 @@
       function generateGameListHTML(gameList) {
         const html = gameList.map((game) => {
           let starHtml = '';
+          let currentURL = window.location.href;
+          let url = new URL(currentURL);
+          let host = url.origin;
           for (let i = 0; i < game.rating; i++) {
             starHtml += '<i class="iconfont icon-xingxing"></i>';
           }
           return `
           <div class="item-game">
-            <a class="game" href="${game.url}index.html" target="_blank" title="${game.name}">
+            <a class="game" href="${host}${game.url}index.html" target="_blank" title="${game.name}">
               <img src="https://blog.guole.fun/img/game/${game.icon}">
               <div class="name">${game.name}</div>
             </a>
