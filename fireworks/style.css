@@ -133,8 +133,9 @@ body {
   background: #999;
   transition: all 0.2s;
   border-radius: 4px;
-  border:2px solid;
+  border:2px solid #333;
   padding: 4px 8px;
+  color: #333;
 }
 .menu__inner-wrap button:hover {
   background: #b4b4b4;
