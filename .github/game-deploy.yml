@@ -36,3 +36,8 @@ jobs:
     - name: upload tencent cloud COS
       run: |
         coscmd upload -rfs --delete ./ /
+        
+    - name: Call API
+      run: |
+        response=$(curl -X GET ${{ secrets.CDN_CACHE_REFRESH_API }}?url=https://game.guole.fun/*)
+        echo "$response"
