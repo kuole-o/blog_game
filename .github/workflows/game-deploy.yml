@@ -36,5 +36,5 @@ jobs:
         
     - name: Call API
       run: |
-        response=$(curl -X GET ${{ secrets.CDN_CACHE_REFRESH_API }}?url=https://game.guole.fun/*)
+        response=$(curl -X GET -H "token: ${{ secrets.API_TOKEN }}" ${{ secrets.CDN_CACHE_REFRESH_API }}?url=https://game.guole.fun/*)
         echo "$response"
